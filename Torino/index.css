@@ -1,0 +1,211 @@
+
+/*************** DNA ****************/
+:root{
+font-family: "Bebas Neue", sans-serif; 
+--primary: rgb(109, 22, 10);
+--secondary: rgb(148, 8, 38);
+--tertiary:rgb(228, 238, 247);
+color: var(--tertiary);
+}
+
+/************ Skeleton **************/
+
+body{display: grid; justify-content: center;margin: 0;}
+
+.scroll-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    cursor: grab;
+    user-select: none;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;       
+    }
+.scroll-container:active {cursor: grabbing;}
+.scroll-container::-webkit-scrollbar {display: none;}
+
+.pag {
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;    
+    scroll-snap-stop: always;
+    }
+.box{width: 25vw; min-height: 30vh; align-content: center;display: grid;}
+h1{font-size: 75px;}
+
+
+/************** Page 1 ******************/
+
+.pag1{
+    position: relative;
+    background-color: black;
+    }
+    
+.moving-background-pag1 {
+    position: absolute;
+    width: 100vw; 
+    height: 100vh;
+    opacity: 50%;
+    background-image: url('toro.png');
+    background-size: 5%;
+ 
+    animation: slideBackground 30s linear infinite; 
+    }
+
+        @keyframes slideBackground {
+            from {
+                background-position: 0 0;
+                }
+            to {
+                background-position: 100% 50%;
+                }
+                  }
+        
+    .head-pag1 h1,.head-pag1 p {
+        margin: 0; 
+        }
+
+    .content-pag1{
+      z-index: +1;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 70vw;
+      min-height: 70vh;
+      justify-items: center;
+      align-content: center;
+      text-align: center;
+      border: var(--primary) solid 3px;
+    }
+
+    .torso-pag1{
+      max-width: 70vw;
+      margin-top: 30px;
+      gap: 20px;
+      justify-content: center;
+      display: flex;
+    }
+
+    .box-text-pag1{
+        text-align: end;
+    }
+
+    .torinoLogo{
+        max-width: 50%
+    }
+
+/************** Page 2 *************/
+
+.pag2{color: var(--tertiary);
+    display: grid;
+    text-align: center;
+    position: relative;
+    align-items: start;
+    justify-items: center;
+    }
+
+.header2{
+    background-color: black;
+    width: 100vw;
+}
+
+    .torso-pag2{
+      max-width: 20vw;
+      margin-top: 30px;
+      gap: 20px;
+      display: flex;
+      text-align: start;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 50px;
+    }
+
+    .backgroundImage{
+        position: absolute;
+        z-index: -1;
+        width: 100vw; 
+        height: 100vh;
+    }
+
+    /************** Page 3 *************/
+
+.pag3{color: var(--tertiary);
+    display: grid;
+    text-align: center;
+    position: relative;
+    align-items: start;
+    justify-items: center;
+    }
+
+.header3{
+    background-color: black;
+    width: 100vw;
+}
+
+    .torso-pag3{
+      max-width: 20vw;
+      margin-top: 30px;
+      gap: 20px;
+      display: flex;
+      text-align: start;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 50px;
+    }
+
+    /************** Page 4 *************/
+
+.pag4{color: var(--tertiary);
+    display: grid;
+    text-align: center;
+    position: relative;
+    align-items: start;
+    justify-items: center;
+    }
+
+.header4{
+    background-color: black;
+    width: 100vw;
+}
+
+    .torso-pag4{
+      max-width: 20vw;
+      margin-top: 30px;
+      gap: 20px;
+      display: flex;
+      text-align: start;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 50px;
+    }
+
+    /************** Page 5 *************/
+
+.pag5{color: var(--tertiary);
+    display: grid;
+    text-align: center;
+    position: relative;
+    align-items: start;
+    justify-items: center;
+    }
+
+.header5{
+    background-color: black;
+    width: 100vw;
+}
+
+    .torso-pag5{
+      max-width: 20vw;
+      margin-top: 30px;
+      gap: 20px;
+      display: flex;
+      text-align: start;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 50px;
+    }
+
+     /************** Page 6 (end) *************/
+
+     .pag6{background-color: black;
+            align-items: center;
+            justify-items: center;
+    }
